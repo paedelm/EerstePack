@@ -20,3 +20,7 @@ class EerstepackView
 
   getElement: ->
     @element
+
+  setCount: (count) ->
+    displayTekst = "Er zijn #{count} woorden"
+    @element.children[0].textContent = displayTekst
